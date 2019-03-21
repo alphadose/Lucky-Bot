@@ -30,7 +30,7 @@ cd functions && npm install
 
 6. Run server
 ```shell
-npm serve
+npm run serve
 ```
 
 7. Install ngrok
