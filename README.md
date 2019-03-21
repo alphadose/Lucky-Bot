@@ -25,10 +25,25 @@ firebase use --add <YOUR_PROJECT_NAME>
 
 5. Install dependencies
 ```shell
-cd functions and npm install
+cd functions && npm install
 ``` 
 
 6. Run server
 ```shell
 npm serve
+```
+
+7. Install ngrok
+```
+npm install -g ngrok
+``` 
+
+8. Expose port 5000 and get the ngrok URL
+```
+ngrok http 5000
+```
+
+9. Paste this into the Webhook URL field in the Fulfillment section of DialogFlow
+```
+<YOUR_NGROK_URL>/<YOUR_PROJECT_NAME>/us-central1/assistant
 ```
